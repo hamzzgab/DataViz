@@ -20,5 +20,5 @@ class TestStack(unittest.TestCase):
 
     def test_array_initialised(self):
         self.stack.max = 5
-        expected_stack = [None, None, None, None]
+        expected_stack = [None, None, None, None, None]
         assert self.stack.array == expected_stack
