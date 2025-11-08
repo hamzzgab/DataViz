@@ -14,6 +14,9 @@ class TestStack(unittest.TestCase):
         self.stack.max = 10
         assert self.stack.max == 10
 
+        with self.assertRaises(ValueError):
+            self.stack.max = -1
+
     def test_top_initialised(self):
         assert self.stack.top == -1
 
@@ -61,3 +64,7 @@ class TestStack(unittest.TestCase):
         self.stack.push(1)
         self.stack.push(2)
         assert self.stack.array == [0, 1, 2, 'X', 'X']
+
+        self.stack.push(3)
+        self.stack.push(4)
+        assert self.stack.array == [0, 1, 2, 3, 4]
