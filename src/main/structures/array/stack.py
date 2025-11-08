@@ -51,8 +51,6 @@ class Stack:
 
         if self.is_empty():
             self.array = [self.__default] * self.__max
-        elif self.is_full():
-            return
 
         for i in range(self.__top + 1, self.__max):
             self.array[i] = self.__default
