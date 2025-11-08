@@ -31,6 +31,8 @@ class TestStack(unittest.TestCase):
         assert not self.stack.is_full()
         for i in range(0, self.stack.max):
             assert self.stack.push(i) == 0
+
+        assert self.stack.push(self.stack.max + 1) == -1
         assert self.stack.is_full()
 
     def test_pop_from_stack(self):
@@ -42,6 +44,8 @@ class TestStack(unittest.TestCase):
 
         assert self.stack.pop() == 0
         assert self.stack.array == [None, None]
+
+        assert self.stack.pop() == -1
 
     def test_stack_is_empty(self):
         assert self.stack.is_empty()
