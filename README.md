@@ -1,1 +1,1 @@
-[![codecov](https://codecov.io/gh/hamzzgab/DataViz/graph/badge.svg?token=exmWWBvyIW)](https://codecov.io/gh/hamzzgab/DataViz)
+[![codecov](https://codecov.io/gh/hamzzgab/DataViz/branch/master/graph/badge.svg?token=exmWWBvyIW)](https://codecov.io/gh/hamzzgab/DataViz)
