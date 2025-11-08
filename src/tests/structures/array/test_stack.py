@@ -55,7 +55,9 @@ class TestStack(unittest.TestCase):
         assert self.stack.push(1) == 0
         assert not self.stack.is_empty()
 
-    def test_default_updates(self):
+    def test_default_set(self):
+        assert self.stack.default is None
+
         self.default = 'X'
         self.stack.max = 5
         self.stack.default = self.default
@@ -67,4 +69,5 @@ class TestStack(unittest.TestCase):
 
         self.stack.push(3)
         self.stack.push(4)
+        self.stack.default = -1
         assert self.stack.array == [0, 1, 2, 3, 4]
